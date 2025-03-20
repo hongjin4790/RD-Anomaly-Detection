@@ -30,10 +30,25 @@
   - Transformer 기반 설계: Transformer의 요소를 통합하여 더 나은 표현력과 피처 추출 능력
   - 최신 기술 반영: ConvNeXt는 최신 모델 트렌드를 반영한 아키텍처로 성능 개선 가능성
 
+![image](https://github.com/user-attachments/assets/2553eeac-ef8c-4b84-bbb9-92c782deade7)
 
 - 논문의 의도대로 대칭구조로 작성
   - ResNet의 4개의 Stage 중 3개의 Stage로 구성 -> ConvNeXt도 같은 구조로 교체
   - ConvNeXt의 4번째 stage로 OCE를 구성
   - ConvNeXt의 Tiny, Small, Base, Large 중 Base 선택
  
-  
+# 모델 결과
+<img src="https://github.com/user-attachments/assets/493d7a24-5c15-41a4-b133-23349a1c896d" width="600" height="300"/>
+
+- RD(ConvNeXt)가 모든 클래스에 대한 성능이 좋지 않은 것으로 보아 구조적으로 문제가 있을것으로 판단
+
+<img src="https://github.com/user-attachments/assets/a0b50fba-fca1-4b8e-89e2-b6c84fd16ff3" width="500" height="300"/>
+
+<img src="https://github.com/user-attachments/assets/4c5fa235-1253-41bb-b66d-a7b4a79c8818" width="500" height="300"/>
+
+# 결론
+ResNet에서 ConvNext로 백본을 교체하여 성능 개선을 시도했으나, 전체적으로 ResNet보다 성능이 낮아지는 결과를 얻었다.
+이를 개선하기 위해 향후 성능을 더 끌어올리기 위해 구조적인 수정을 위한 추가 연구가 필요하다.
+
+
+
